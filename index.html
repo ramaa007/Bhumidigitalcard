@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhumi Patel - Digital Card</title>
+    
+    <!-- Tailwind CSS for styling --><script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Font for a professional look (using Inter as it's clean and similar to the reference) --><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom styles for brand colors and specific design tweaks --><style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Sampled red from the provided image for consistency */
+        .bg-yong-red {
+            background-color: #EC2127; 
+        }
+        .text-yong-red {
+            color: #EC2127;
+        }
+        .hover\:bg-yong-red-dark:hover {
+            background-color: #C01B20; /* Slightly darker for hover effect */
+        }
+
+        /* Specific styles for the card structure */
+        .contact-block {
+            background-color: white;
+            border-radius: 12px; /* Slightly rounded corners */
+            padding: 18px 20px;
+            display: flex;
+            align-items: flex-start; /* Align text to top if multiple lines */
+            gap: 15px; /* Space between icon and text */
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05); /* Subtle shadow */
+        }
+        .contact-block-icon {
+            flex-shrink: 0; /* Prevent icon from shrinking */
+            width: 24px;
+            height: 24px;
+            color: #888; /* Grey for icons */
+        }
+        .contact-block-title {
+            font-size: 0.8rem; /* Smaller for title */
+            font-weight: 600;
+            color: #888;
+            text-transform: uppercase;
+            margin-bottom: 2px;
+        }
+        .contact-block-value {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #333;
+            line-height: 1.4; /* For better readability, especially address */
+        }
+        /* Style for the YONG text in the header */
+        .yong-text-header {
+            font-size: 1.8rem; /* Larger for "YONG" */
+            font-weight: 700;
+            color: white;
+            letter-spacing: 0.05em; /* Slightly spaced out */
+            line-height: 1; /* Tighter line height */
+        }
+        .slogan-text {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: rgba(255,255,255,0.8); /* Slightly muted white */
+            margin-top: 4px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+
+    <!-- Main Card Container --><div class="bg-white max-w-sm w-full rounded-2xl shadow-xl overflow-hidden">
+        
+        <!-- Header Section (Red Background) --><div class="bg-yong-red pt-8 pb-4 flex flex-col items-center relative z-10">
+            <!-- Main YONG Logo (Text, since image hotlinking is an issue) --><!-- Using your provided logo link, with text fallback --><img 
+                src="https://www.yong.com.au/_assets/8158/images/kirra.png" 
+                alt="YONG" 
+                class="h-10 mb-2"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+            >
+            <p class="yong-text-header" style="display:none;">YONG</p>
+            <p class="slogan-text">Real Estate</p> 
+            
+            <!-- Profile Picture --><div class="mt-8"> <!-- Adjusted margin-top to position below company info --><img 
+                    src="https://assets.zyrosite.com/YrDJMy25kPhj3eb1/gemini_generated_image_5i6bmc5i6bmc5i6b-m7VD3LlLQ7fZ8E1k.png" 
+                    alt="Bhumi Patel" 
+                    class="w-32 h-32 rounded-full object-cover border-4 border-white shadow-lg"
+                    onerror="this.src='https://placehold.co/128x128/EC2127/FFFFFF?text=BP'"
+                >
+            </div>
+        </div>
+        
+        <!-- Main Content Section (White Background) --><div class="bg-white p-6 pt-6 relative z-0">
+        
+            <!-- Name & Title --><h1 class="text-3xl font-bold text-gray-900 text-center mt-4">Bhumi Patel</h1>
+            <p class="text-lg text-gray-600 text-center mt-1">Residential Sales Agent</p>
+            
+            <!-- Contact Blocks --><div class="mt-8 space-y-4">
+                
+                <!-- Phone Block --><div class="contact-block">
+                    <svg class="contact-block-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                    <div>
+                        <p class="contact-block-title">PHONE</p>
+                        <a href="tel:0430879900" class="contact-block-value block transition-colors hover:text-yong-red">0430 879 900</a>
+                    </div>
+                </div>
+                
+                <!-- Email Block --><div class="contact-block">
+                    <svg class="contact-block-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    <div>
+                        <p class="contact-block-title">EMAIL</p>
+                        <a href="mailto:bhumi.patel@yong.com.au" class="contact-block-value block transition-colors hover:text-yong-red">bhumi.patel@yong.com.au</a>
+                    </div>
+                </div>
+
+                <!-- Office Address Block --><div class="contact-block">
+                    <svg class="contact-block-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    <div>
+                        <p class="contact-block-title">OFFICE ADDRESS</p>
+                        <a href="https://www.google.com/maps?q=Pacific+Centre,+Suite+18,+223+Calam+Rd,+Sunnybank+Hills+QLD+4109" target="_blank" rel="noopener noreferrer" class="contact-block-value block transition-colors hover:text-yong-red">
+                            Pacific Centre, Suite 18<br>
+                            223 Calam Rd, Sunnybank Hills QLD 4109
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Website Block --><div class="contact-block">
+                    <svg class="contact-block-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
+                    <div>
+                        <p class="contact-block-title">WEBSITE</p>
+                        <a href="https://www.yong.com.au/" target="_blank" rel="noopener noreferrer" class="contact-block-value block transition-colors hover:text-yong-red">yong.com.au</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- "Save Contact" Button --><div class="p-6 pt-4">
+            <a 
+                id="save-vcard-btn"
+                href="#" 
+                class="flex items-center justify-center w-full bg-yong-red text-white text-lg font-bold py-4 px-6 rounded-xl shadow-md transition-all transform hover:scale-105 hover:bg-yong-red-dark"
+                download="Bhumi Patel.vcf"
+            >
+                <!-- Save Icon --><svg class="w-6 h-6 mr-2.5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.59 3H6.41C5.08 3 4 4.08 4 5.41v13.18C4 19.92 5.08 21 6.41 21h11.18c1.33 0 2.41-1.08 2.41-2.41V7.41L17.59 3zM12 19c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm3-10H7V5h8v4z"></path></svg>
+                Save to Contacts
+            </a>
+        </div>
+    </div>
+
+    <!-- JavaScript to create the "One-Tap Save" link --><script>
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            // The raw data for the vCard file
+            const vCardData = `BEGIN:VCARD
+VERSION:3.0
+N:Patel;Bhumi;;;
+FN:Bhumi Patel
+TITLE:Residential Sales Agent
+ORG:Yong Real Estate
+TEL;TYPE=CELL:0430 879 900
+EMAIL:bhumi.patel@yong.com.au
+PHOTO;VALUE=URL:https://assets.zyrosite.com/YrDJMy25kPhj3eb1/gemini_generated_image_5i6bmc5i6bmc5i6b-m7VD3LlLQ7fZ8E1k.png
+URL:https://www.yong.com.au/
+ADR;TYPE=WORK:;;Pacific Centre, Suite 18, 223 Calam Rd;Sunnybank Hills;QLD;4109;Australia
+END:VCARD`;
+
+            const saveButton = document.getElementById('save-vcard-btn');
+            const encodedData = encodeURIComponent(vCardData);
+            const dataUri = `data:text/vcard;charset=utf-8,${encodedData}`;
+            saveButton.href = dataUri;
+        });
+    </script>
+
+</body>
+</html>
+
